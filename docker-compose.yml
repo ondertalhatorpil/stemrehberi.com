@@ -1,0 +1,6 @@
+services:
+   stem-service:
+     build:
+       context: .
+     ports:
+       - "8526:80"

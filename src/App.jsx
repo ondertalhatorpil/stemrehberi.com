@@ -229,10 +229,7 @@ export default function App() {
               </button>
             </>
           )}
-          <button className="open-btn" onClick={() => fileInputRef.current?.click()}>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" width="14" height="14"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            {pdf ? 'Değiştir' : 'PDF Aç'}
-          </button>
+        
           <input ref={fileInputRef} type="file" accept=".pdf" style={{ display: 'none' }} onChange={e => loadFile(e.target.files[0])} />
         </div>
       </header>
